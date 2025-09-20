@@ -7,13 +7,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+#logo {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ba9f27;
   font-family: greek-freak, Helvetica;
-  margin: 0;
+  padding: 5px;
 }
 
 a {
@@ -22,15 +29,15 @@ a {
 }
 
 .nav-options {
-  list-style: none;
-  padding: 0;
-  margin-left: 15px;
+  /* list-style: none; */
+  padding: 10px;
   background-color: #ba9f27;
   color: crimson;
 }
 
 .nav-link {
   margin-left: 15px;
+  display: inline-block;
 }
 
 .main-section {
@@ -46,10 +53,6 @@ a {
 .main-page-text {
   text-align: center;
   color: white;
-}
-
-#logo {
-  align-items: center;
 }
 
 @media (min-width: 1000px) {
