@@ -71,3 +71,8 @@ html,
 body {
   height: 100%;
 }
+footer {
+  background-color: #f8facf;
+  text-align: center;
+  padding: 1px;
+}
