@@ -11,20 +11,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8facf;
+  background-color: #ba9f27;
   font-family: greek-freak, Helvetica;
   margin: 0;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .nav-options {
   list-style: none;
   padding: 0;
   margin-left: 15px;
-  background-color: #f8facf;
+  background-color: #ba9f27;
   color: crimson;
 }
 
@@ -33,13 +34,14 @@ a {
 }
 
 .middle {
-  background-color: #77a377;
+  background-color: #6e261e;
   padding-bottom: 700px;
   padding-top: 1px;
 }
 
 .main-page-text {
   text-align: center;
+  color: white;
 }
 
 #logo {
@@ -56,10 +58,10 @@ a {
   .left,
   .right {
     width: 20%;
-
-    background-image: src('../images/marble-pillars.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #1d2247;
+    /* background-image: url('../images/marble-pillars-1.jpg');
+    background-size: cover; */
+    /* background-position: center; */
   }
 
   .middle {
@@ -71,8 +73,9 @@ html,
 body {
   height: 100%;
 }
+
 footer {
-  background-color: #f8facf;
+  background-color: #ba9f27;
   text-align: center;
   padding: 1px;
 }
