@@ -1,66 +1,68 @@
 <!--What does it mean to display inline vs inline blocks?-->
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Inline & Inline-Block Display
-    </title>
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>
+        Inline & Inline-Block Display
+      </title>
+      <link href="../styles/main.css" rel="stylesheet" type="text/css">
+  </head>
 
-<body>
-  <img id="logo" src="../images/greek-school.png" alt="Drawing of a greek temple" style="width: 50px; height: auto;">
-  <nav class="navbar">
-    <div class="nav-options">
-      <div class="nav-link"><a href="brannan-shaw.github.io">Home</a></div>
-      <div class="nav-link"><a href="#">Journal</a></div>
-      <div class="nav-link"><a href="#">About Me</a></div>
-      <div class="nav-link"><a href="#">Cats</a></div>   
-    </div>  
-  </nav>
-  
-  <div class="main-section">
-    <div class="left column"></div>
-    <div class="main-page-text middle column">
-      <div>
-      A display property is what defines the display (duh) behaviour of an element,
-      relative to other things around it. By default, a lot of elements are displayed
-      as block, meaning that if we place them mid sentence, they would appear on a new
-      line. Anything that then follows said element would appear on another new line.
-      A few examples of default display block elements are
-      </div>
-      <p>paragraph</p>
-      ,
-      <div>division</div>
-      , and
-      <h1>
-        H1
-      </h1>
-      <p>to</p> 
-      <h6>
-        H6
-      </h6>
-      <p>heading elements.</p>
+  <body>
+    <img id="logo" src="../images/greek-school.png" alt="Drawing of a greek temple" style="width: 50px; height: auto;">
+    <nav class="navbar">
+      <div class="nav-options">
+        <div class="nav-link"><a href="brannan-shaw.github.io">Home</a></div>
+        <div class="nav-link"><a href="#">Journal</a></div>
+        <div class="nav-link"><a href="#">About Me</a></div>
+        <div class="nav-link"><a href="#">Cats</a></div>   
+      </div>  
+    </nav>
+    
+    <div class="main-section">
+      <div class="left column"></div>
+      <div class="main-page-text middle column">
+        <div>
+        A display property is what defines the display (duh) behaviour of an element,
+        relative to other things around it. By default, a lot of elements are displayed
+        as block, meaning that if we place them mid sentence, they would appear on a new
+        line. Anything that then follows said element would appear on another new line.
+        A few examples of default display block elements are
+        </div>
+        <p>paragraph</p>
+        ,
+        <div>division</div>
+        , and
+        <h1>
+          H1
+        </h1>
+        <p>to</p> 
+        <h6>
+          H6
+        </h6>
+        <p>heading elements.</p>
+        <p>
+          Using inline elements allows us to keep a nicer flow
+          within a webpage. They do this by keeping whatever element we are
+          characterising on the same line as anything that precedes or follows it.
+          There are also some elements that default to display inline. These include
+          <a>anchor</a>, <strong>bold</strong>, and <em>italics</em>. When inline is
+          set as the display property, the element will not be affected by any height
+          or width properties. When inline-block is used, it gives us an element that
+          we can change the size of using height and width properties. This can be
+          useful for things like <button display:inline-block;><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">buttons</a></button> where you may want to make them larger to help with emphasis.
+        </p>
+    </div>
+    <div class="right column"></div>
+  </body>
+
+  <footer>
+    <div> 
       <p>
-        Using inline elements allows us to keep a nicer flow
-        within a webpage. They do this by keeping whatever element we are
-        characterising on the same line as anything that precedes or follows it.
-        There are also some elements that default to display inline. These include
-        <a>anchor</a>, <strong>bold</strong>, and <em>italics</em>. When inline is
-        set as the display property, the element will not be affected by any height
-        or width properties. When inline-block is used, it gives us an element that
-        we can change the size of using height and width properties. This can be
-        useful for things like <button display:inline-block;><a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">buttons</a></button> where you may want to make them larger to help with emphasis.
+        ©Brannan Shaw. All Rights Reserved
       </p>
-  </div>
-  <div class="right column"></div>
-</body>
-
-<footer>
-  <div id="footer"> 
-    <p>
-      ©Brannan Shaw. All Rights Reserved
-    </p>
-  </div> 
-</footer>
+    </div> 
+  </footer>
+</html
