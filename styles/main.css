@@ -1,6 +1,27 @@
+@font-face {
+  font-family: greek-freak;
+  src: url('../fonts/greek-freak.ttf');
+}
+
 .navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #f8facf;
+  font-family: greek-freak, Helvetica;
+}
+
+.nav-options {
+  list-style: none;
+  padding: 0;
+  margin-left: 15px;
   background-color: #f8facf;
   color: crimson;
-  font-family: greek-freak, Helvetica;
+}
+
+.main-page-text {
+  text-align: center;
+}
+
+#logo {
   align-items: center;
 }
