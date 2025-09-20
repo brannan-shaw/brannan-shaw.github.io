@@ -29,6 +29,10 @@ a {
   color: crimson;
 }
 
+.nav-link {
+  margin-left: 15px;
+}
+
 .main-section {
   margin: 0;
 }
