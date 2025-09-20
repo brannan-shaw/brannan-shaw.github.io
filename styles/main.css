@@ -66,9 +66,6 @@ a {
   .right {
     width: 20%;
     background-color: #1d2247;
-    /* background-image: url('../images/marble-pillars-1.jpg');
-    background-size: cover; */
-    /* background-position: center; */
   }
 
   .middle {
@@ -85,4 +82,15 @@ footer {
   background-color: #ba9f27;
   text-align: center;
   padding: 1px;
+}
+
+button {
+  height: 75px;
+  width: 90px;
+  background-color: #1d2247;
+  border-radius: 15px;
+}
+
+.page-title {
+  font-size: 50px;
 }
