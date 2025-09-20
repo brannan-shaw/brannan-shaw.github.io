@@ -1,13 +1,23 @@
-@font-face {
+/* @font-face {
   font-family: greek-freak;
   src: url('../fonts/greek-freak.ttf');
-}
+} */
 
+body {
+  margin: 0;
+  padding: 0;
+}
 .navbar {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #f8facf;
   font-family: greek-freak, Helvetica;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .nav-options {
@@ -18,10 +28,46 @@
   color: crimson;
 }
 
+.main-section {
+  margin: 0;
+}
+
+.middle {
+  background-color: #77a377;
+  padding-bottom: 700px;
+  padding-top: 1px;
+}
+
 .main-page-text {
   text-align: center;
 }
 
 #logo {
   align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    height: 93%;
+  }
+
+  .left,
+  .right {
+    width: 20%;
+
+    background-image: src('../images/marble-pillars.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .middle {
+    width: 60%;
+  }
+}
+
+html,
+body {
+  height: 100%;
 }
