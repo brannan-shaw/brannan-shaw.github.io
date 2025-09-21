@@ -53,13 +53,16 @@ a {
 .main-page-text {
   text-align: center;
   color: white;
+  max-height: 100%;
 }
+
+
 
 @media (min-width: 1000px) {
   .main-section {
     display: flex;
     flex-direction: row;
-    height: 93%;
+    height: 100%;
   }
 
   .left,
@@ -71,6 +74,7 @@ a {
   .middle {
     width: 60%;
   }
+}
 }
 
 html,
@@ -94,4 +98,23 @@ button {
 
 .page-title {
   font-size: 50px;
+  text-decoration: underline;
+  margin: 40px;
+}
+
+.point {
+  margin-bottom: 20px;
+}
+
+.prompt {
+  font-size: 2em;
+  color: #d8f12c;
+  margin-bottom: 10px;
+}
+
+.answer {
+  font-size: 1.3em;
+  text-align: left;
+  margin-inline: 20px;
+  line-height: 1.2
 }
