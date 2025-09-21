@@ -56,8 +56,6 @@ a {
   max-height: 100%;
 }
 
-
-
 @media (min-width: 1000px) {
   .main-section {
     display: flex;
@@ -74,7 +72,6 @@ a {
   .middle {
     width: 60%;
   }
-}
 }
 
 html,
@@ -116,5 +113,5 @@ button {
   font-size: 1.3em;
   text-align: left;
   margin-inline: 20px;
-  line-height: 1.2
+  line-height: 1.2;
 }
