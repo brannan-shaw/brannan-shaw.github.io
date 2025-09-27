@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javascript & the DOM</title>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <img
+      id="logo"
+      src="../images/greek-school.png"
+      alt="Drawing of a greek temple"
+      style="width: 50px; height: auto"
+    />
+    <nav class="navbar">
+      <div class="nav-options">
+        <div class="nav-link">
+          <a href="https://brannan-shaw.github.io/">Home</a>
+        </div>
+        <div class="nav-link"><a href="#">Journal</a></div>
+        <div class="nav-link"><a href="#">About Me</a></div>
+        <div class="nav-link"><a href="#">Cats</a></div>
+      </div>
+    </nav>
+
+    <div class="main-section">
+      <div class="left column"></div>
+      <div class="main-page-text middle column">
+        <div class="page-title">Javascript & the DOM</div>
+        <div class="point">
+          <div class="prompt">
+            Javascript and how it works with HTML and CSS
+          </div>
+          <div class="answer">
+            <p>
+              A very basic way to describe the relationship between these 3
+              programming languages is as if they are a football team.
+            </p>
+            <p>
+              HTML would be the players. You need the players on the pitch to be
+              able to do anything. The team could not really exist without them.
+            </p>
+            <p>
+              CSS would be what the pitch and the players look like. What
+              colours are the kit? Are there any fancy designs mowed into the
+              grass?
+            </p>
+            <p>
+              Javascript would be the manager/coach. Someone who is able to
+              change the instructions for a specific player or the team as
+              whole. Take one player off and put another on.
+            </p>
+            <p>
+              HTML on its own would work as a webpage but by using CSS and
+              Javascript, we are able to make it look a lot nicer as well as be
+              a lot more functional.
+            </p>
+          </div>
+        </div>
+        <div class="point">
+          <div class="prompt">The DOM</div>
+          <div class="answer">
+            <p>
+              The Document Object Model (or DOM) is a hierarchical system that
+              allows for the organisation and access of aspects within a
+              webpage. It is often thought of as a family tree which is
+              especially apt when referring to parent and child nodes within it.
+            </p>
+            <img
+              id="dom-tree"
+              src="..\images\dom-tree.png"
+              alt="layout of a DOM 'tree'"
+              style="max-width: 100%; height= auto;"
+            />
+            <p>
+              The DOM provides an Application Programming Interface (API) that a
+              scripting language (in this case Javascript) uses to interact with
+              the document. In that sense, the DOM kind of acts like a
+              translator for the Javascript to communicate with the rest of the
+              document.
+            </p>
+            <p>
+              An obvious example of it is when we are calling an element to do
+              something with, as shown below:
+            </p>
+            <code
+              >let pageHeading = document.getElementById('pageHeading')</code
+            >
+            <p>
+              Here we are defining a variable within Javascript. The "document"
+              part is instructing the code to take the information from
+              somewhere within the Document node.
+            </p>
+          </div>
+        </div>
+        <div class="point">
+          <div class="prompt">Arrays and Objects</div>
+          <div class="answer">
+            <p>
+              An array is a range of values given in the form of an ordered
+              list.<br />
+              An object is made up of key-value pairs, where the key tells us
+              the aspect and the value gives us the detail.
+            </p>
+            <p>An array would be like a team of football players</p>
+            <div class="code-block">
+              <code>
+                let team = ['thomas', 'shane', 'david', 'jamie', 'brad'];
+              </code>
+            </div>
+            <p>
+              And you would access it using the index number of the player that
+              you want
+            </p>
+            <div class="code-block">
+              <code>console.log(team[2]);</code>
+            </div>
+            <p>Would return "david" in the console</p>
+            <p>An object would be the details for each individual program</p>
+            <div class="code-block">
+              <code>
+                let goalkeeper = { name: 'thomas'; shirtNumber: 1; height:
+                '192cm'; dominantFoot: 'left' }
+              </code>
+            </div>
+            <p>We would acces this using the name of the object and the key</p>
+            <div class="code-block">
+              <code>console.log(goalkeeper.dominantFoot);</code>
+            </div>
+            <p>Would return "left" in the console</p>
+          </div>
+        </div>
+        <div class="point">
+          <div class="prompt">Control Flow</div>
+          <div class="answer">
+            <p>
+              Control flow is the order of operations that the code runs
+              through. Javascript runs top to bottom by default. This can be
+              altered by things such as conditions, loops or functions by
+              telling the code to call an aspect form somewhere else in the
+              script to be run at that time.
+            </p>
+          </div>
+        </div>
+        <div class="point">
+          <div class="prompt">Functions</div>
+          <div class="answer">
+            <p>
+              Functions are a set of actions that are placed within a group and
+              given a name. This is useful if you need to use the same set of
+              actions multiple times across a script. It saves on time as you do
+              not need to type it out each time. It also means that if you ever
+              need to change the way the set of actions is working, you only
+              need to change it on one part of the script instead of combing
+              through the whole file to change each set that was typed out.
+            </p>
+          </div>
+        </div>
+        <div class="point">
+          <div class="prompt">Loops</div>
+          <div class="answer">
+            <p>
+              Loops are something that Javascript uses to repeat a process until
+              a condition is met.<br />
+              We can use cleaning rooms in your house as an example.
+            </p>
+            <div class="code-block">
+              <code>
+                let messyRooms = ['kitchen', 'lounge', 'masterBedroom',
+                'guestBedroom', 'bathroom'];<br />
+                <br />
+                let cleanRooms = [];<br />
+                <br />
+                for( i=0; i < messyRooms.length; i++){<br />
+                cleanRooms.push(messyRooms[i]);<br />
+                console.log(cleanRooms[i] + ' is now clean')<br />
+                };
+              </code>
+            </div>
+            <p>
+              This loop would start by 'cleaning' the first room in the array,
+              then cycle through the “messyRooms” array until all of them have
+              been cleaned. It would tell us in the console after each room has
+              been cleaned.
+            </p>
+            <img
+              id="cleanRooms-console"
+              src="..\images\cleanRooms-console.PNG"
+              alt="screenshot of console showing which rooms have been cleaned"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="right column"></div>
+    </div>
+
+    <footer>
+      <div id="footer">©Brannan Shaw. All Rights Reserved</div>
+    </footer>
+  </body>
+</html>
